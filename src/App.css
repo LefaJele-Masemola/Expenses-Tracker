@@ -1,7 +1,104 @@
+/* App.css */
+
+/* Root styles */
+:root {
+  --primary-color: #ff6f61;
+  --secondary-color: #ffab40;
+  --background-color: #f9f9f9;
+  --text-color: #333;
+  --border-radius: 8px;
+  --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* General styles */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
 .App {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
   text-align: center;
 }
 
+h1 {
+  color: var(--primary-color);
+}
+
+/* Form styles */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+input,
+button {
+  padding: 0.75rem;
+  border: 2px solid var(--primary-color);
+  border-radius: var(--border-radius);
+  font-size: 1rem;
+}
+
+input {
+  width: 100%;
+  max-width: 400px;
+}
+
+button {
+  background-color: var(--primary-color);
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--secondary-color);
+}
+
+/* List styles */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background-color: white;
+  border: 1px solid var(--primary-color);
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  margin: 1rem 0;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+li span {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+li button {
+  background-color: var(--secondary-color);
+  border: none;
+  padding: 0.5rem;
+  cursor: pointer;
+  border-radius: var(--border-radius);
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+li button:hover {
+  background-color: var(--primary-color);
+}
+
+/* Default styles from Create React App */
 .App-logo {
   height: 40vmin;
   pointer-events: none;

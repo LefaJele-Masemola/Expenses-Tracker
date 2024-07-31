@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './App.css';
 import ExpenseForm from './Components/Transactionform';
 import ExpenseList from './Components/Transactionlist';
 
